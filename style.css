@@ -1,0 +1,349 @@
+.w-img {
+    display: block !important;
+    width: 100% !important;
+}
+
+.w-block {
+    display: block !important;
+}
+
+/* user */
+
+#person-height30 {
+    height: 20px;
+    line-height: 20px;
+    float: left;
+    margin-top: 5px
+}
+
+.w-header-pro-icon {
+    height: 18px;
+    width: 42px;
+    display: block;
+    margin-top: 11px;
+    margin-right: 20px;
+    display: none;
+}
+
+.w-person-icon {
+    height: 18px;
+    width: 42px;
+    display: block;
+    margin-right: 65px;
+}
+
+.w-pro-private {
+    margin-bottom: 5px;
+    width: 254px;
+    height: 36px;
+    line-height: 36px;
+    background-image: linear-gradient(180deg, #e6c58a 0%, #dfb676 50%, #d8a661 100%), linear-gradient( #f8f8f8, #f8f8f8);
+    background-blend-mode: normal, normal;
+    display: block;
+    text-indent: .5em;
+    font-size: 14px;
+    color: #604419;
+    font-family: 'Microsoft YaHei'
+}
+
+.w-pro-private img {
+    display: block;
+    width: 15px;
+    margin: 11px 0 0 88px;
+}
+
+.w-recharge-pro-icon {
+    height: 18px;
+    margin-top: 16px;
+    padding: 0 30px;
+    display: none;
+}
+
+.w-recharge-pro-icon a {
+    width: 42px;
+    height: 18px;
+    display: block;
+    float: left;
+    text-align: center;
+    line-height: 18px;
+}
+
+.w-recharge-pro-icon a:first-child {
+    margin-left: 68px;
+}
+
+.w-recharge-pro-icon a:nth-child(2) {
+    margin-left: 10px;
+    font-size: 12px;
+    border-radius: 2px;
+}
+
+.w-recharge-pro-icon a:nth-child(2) img {
+    display: none;
+    width: 100%;
+}
+
+.w-recharge-pro-icon a:nth-child(2) img:nth-child(1) {
+    display: block;
+}
+
+.w-recharge-pro-icon a:nth-child(2):hover img:nth-child(1) {
+    display: none;
+}
+
+.w-recharge-pro-icon a:nth-child(2):hover img:nth-child(2) {
+    display: block;
+}
+
+.recharge-warp .recharge-warp-center .person-center .recharge-list {
+    padding-top: 25px;
+}
+
+.recharge-warp .recharge-warp-center .person-center .recharge-list .recharge-list-index {
+    position: relative;
+    height: 48px;
+    line-height: 48px;
+    font-size: 14px;
+    color: #999999;
+    cursor: pointer;
+    margin-top: 5px
+}
+
+.recharge-warp .recharge-warp-center .person-center .recharge-list .recharge-list-index>a {
+    color: #333333;
+    font-size: 16px;
+    display: inline-block;
+    padding-left: 52px;
+    width: 100%;
+    height: 100%;
+    transition: all .3s
+}
+
+.recharge-warp .recharge-warp-center .person-center .recharge-list .recharge-list-index:hover {
+    background: rgba(38, 139, 239, .1)
+}
+
+.recharge-warp .recharge-warp-center .person-center .recharge-list .recharge-list-index:hover a {
+    color: #268aef
+}
+
+.recharge-warp .recharge-warp-center .person-center .recharge-list .recharge-list-index:hover::after {
+    background: url(img/user-index-icon-active.png) no-repeat center;
+    background-size: cover
+}
+
+.recharge-warp .recharge-warp-center .person-center .recharge-list .recharge-list-index::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    top: 16px;
+    left: 30px;
+    width: 14px;
+    height: 14px;
+    background: url(img/user-index-icon.png) no-repeat center;
+    background-size: cover
+}
+
+.recharge-warp .recharge-warp-center .person-center .recharge-list .recharge-list-index.recharge-active {
+    background: rgba(38, 139, 239, .1) !important;
+    color: #268aef !important
+}
+
+.recharge-active a {
+    color: #268aef !important
+}
+
+.recharge-warp .recharge-warp-center .person-center .recharge-list .recharge-list-index.recharge-active::after {
+    background: url(img/user-index-icon-active.png) no-repeat center;
+    background-size: cover
+}
+
+.recharge-warp .recharge-warp-center .person-center .recharge-list .my-recharge.recharge-active {
+    background: none !important;
+}
+
+.recharge-warp .recharge-warp-center .person-center .recharge-list .my-recharge:hover a, .recharge-warp .recharge-warp-center .person-center .recharge-list .my-recharge.recharge-active a {
+    color: #e6c58a;
+    background: none;
+    background-image: -webkit-linear-gradient( #e6c58a, #d8a661);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.recharge-warp .recharge-warp-center .person-center .recharge-list .my-recharge:hover::before, .recharge-warp .recharge-warp-center .person-center .recharge-list .my-recharge.recharge-active::before {
+    background: url(img/my-recharge.png) no-repeat !important;
+    background-size: 4px 8px !important;
+}
+
+.right-nav-pro {
+    display: block;
+    width: 54px;
+    height: 54px;
+    position: absolute;
+    top: -77px;
+    display: none;
+}
+
+.w-user-banner {
+    display: block;
+    width: 100%;
+    height: 136px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 136px;
+    color: #ffffff;
+    border-radius: 3px;
+    background-color: #999999;
+}
+.w-user-banner img{
+    display: block;
+    width: 100%;
+    height: 136px;
+}
+
+.w-user-list {
+    display: inline-block;
+    height: auto;
+    width: 100%;
+    padding: 20px 0;
+    background-color: #f1f2f3;
+}
+
+.w-user-list li {
+    float: left;
+    width: 230px;
+    height: 224px;
+    margin-right: 10px;
+    background-color: #ffffff;
+    position: relative;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.w-user-list li:nth-child(4n) {
+    margin-right: 0;
+    background-color: #f8fbfe;
+}
+
+.w-user-list-title {
+    color: #333333;
+    font-size: 20px;
+    line-height: 20px;
+    height: 20px;
+    margin: 28px 0 20px;
+    text-align: center;
+}
+
+.w-user-list li:nth-child(1) img {
+    display: block;
+    width: 48px;
+    height: 53px;
+    margin: 0 auto;
+}
+
+.w-user-list li:nth-child(2) img {
+    display: block;
+    width: 52px;
+    height: 47px;
+    margin: 0 auto;
+}
+
+.w-user-list li:nth-child(3) img {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+.w-user-list-name {
+    color: #666666;
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+    height: 14px;
+    position: absolute;
+    bottom: 74px;
+}
+
+.w-user-list-name.no {
+    color: #999999;
+}
+
+.w-user-list-btn {
+    display: block;
+    width: 110px;
+    height: 36px;
+    background-color: #268aef;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    line-height: 36px;
+    position: absolute;
+    bottom: 26px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+
+.w-user-list-tip{
+    display: inline-block;
+    color: #cccccc;
+    text-align: center;
+    font-size: 12px;
+    position: absolute;
+    bottom: 9px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 56px;
+    height: 12px;
+}
+.w-user-box{
+    width: 345px;
+    height: 336px;
+    position: absolute;
+    left: 28%;
+    bottom: -80%;
+    background-color: #f0f7fd;
+    transform: rotate(45deg);
+}
+
+
+.w-user-list-btn.qian {
+    bottom: 132px;
+}
+.w-user-list-qian{
+    font-size: 14px;
+    color: #666666;
+    text-align: center;
+    height: 14px;
+    line-height: 14px;
+    position: absolute;
+    bottom: 91px;
+    width: 100%;
+}
+.w-user-list-shop{
+    font-size: 14px;
+    line-height: 14px;
+    display: block;
+    width: 65px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 66px;
+    color: #cccccc;
+}
+
+
+
+
+
+
+
+
+
+
+/* pro购买 */

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum=1.0,user-scalable=no">
+  <meta name="format-detection" content="telephone=no, email=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="./porno/image/dianxin.ico" type="image/x-icon" />
+  <meta name="referrer" content="always">
+  <title>风险提示</title>
+  <link href="https://cdn.bootcss.com/bootstrap/4.0.0-beta/css/bootstrap-grid.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./porno/css/style.css">
+</head>
+<body>
+  <div class="nav">
+    <h2 class="nav-container">
+      <img src="/porno/image/dianxin.png" alt="">
+    </h2>
+  </div>
+  <div id="notice">
+    <div class="notice-head">
+      <!-- <div class="logo-box">
+        <a class="logo" href="javascript:0;"></a>
+      </div> -->
+      <div class="notice-abc">
+        
+      </div>
+      <div class="notice-info">
+        <p class="notice-para-title text-overflow">
+          当前访问的页面可能存在安全风险!
+        </p>
+        <div class="notice-para">
+          <p class="cur-see">
+            <span class="notice-text">
+              当前正在访问:
+            </span>
+            <a class="site-url" href="javascript:0;"></a><br/>
+          </p>
+
+          <p class="notice-text">
+            <span class="group-name"></span>
+            <span>温馨提醒:</span>
+          </p>
+          <p class="notice-content">
+            您访问的页面可能存在恶意程序, 继续访问可能会导致病毒感染, 账号密码失窃或流量损失, 请谨慎访问。
+          </p>
+        </div>
+        <div class="btn-list">
+          <button class="btn btn-primary btn-stop">停止访问</button>
+          <!-- <button class="btn btn-continue">继续访问(不推荐)</button> -->
+          <button class="btn btn-continue"><a id="continue-link" href="javascript:0;">继续访问(不推荐)</a></button>
+        </div>
+        <div class="report-box">
+          <div class="left">
+            <img src="image/report.png" alt="申诉">
+            <span>站长申诉:</span>
+          </div>
+          如对拦截有异议
+          <a href="javascript:void(0);" class="report">
+            点此链接
+          </a>
+          进行申诉
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./porno/js/jquery.min.js"></script>
+  <script src="./porno/js/jquery.base64.min.js"></script>
+  <script type="text/javascript">
+    $(function () {
+      function getQueryString (name) {
+        var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) {
+          return unescape(r[2]);
+        }
+        return null;
+      };
+      function init () {
+        $.get('/porno/config.json', function (config) {
+          setPageByConf(config);
+          setReferLinks(config);
+        });
+      };
+      function setPageByConf (config) {
+        var complainBox = $('.complain-box');
+        $('.logo-img').attr('alt', config.title);
+        $('.logo-para').text(config.title);
+        $('.group-name').text(config.group);
+        $('.nav').addClass(config.nav_class);
+        if (!!config.report_phone) {
+          $('.complain').text(config.report_phone);
+          complainBox.show();
+        } else {
+          complainBox.hide();
+        }
+      };
+      function setReferLinks (config) {
+        var source = getQueryString('source');
+        source = !!source ? $.base64.decode(source) : '';
+        $('#continue-link').attr('href', 'http://' + source)
+        $('.site-url').attr('href', source || '').text(source || '');
+        if (config.appeal_address) {
+          $('.report').attr('href', config.appeal_address + source);
+        } else {
+          $('.report-box').hide();
+        }
+      };
+      init();
+    });
+  </script>
+  <script src="./porno/js/index.min.js"></script>
+  <script type="text/javascript">
+    var page = 0;
+    $(function () {
+      new _SetHtmlBySdk(page);
+    });
+  </script>
+</body>
+</html>
