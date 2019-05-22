@@ -19,7 +19,11 @@
     <link rel="stylesheet" media="all"
         href="http://cache.xiadele.com/assets/application-f8b1d18acbb88904f6dc74f9de9f6600082dae7f5d38e1c53b777ef61c441dff.css"
         data-turbolinks-track="reload" />
+    <!-- css -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css">
+    <!-- js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.js"></script>
 </head>
 
 <body>
@@ -56,7 +60,7 @@
                     </div>
                 </div>
                 <div class="login-message-group fr">
-                    <!-- header-pro标识   w-block显示 -->
+                    <!-- 公共 header-pro标识   w-block显示 -->
                     <a class="fl w-header-pro-icon w-block" href="pro.html"><img class="w-img" src="img/pro-icon.png"
                             alt="img"></a>
                     <a class="fl w-header-pro-icon" href="pro.html"><img class="w-img" src="img/pro-icon-active.png"
@@ -83,7 +87,7 @@
 
 
                             <div class="my-list">
-                                <!-- 我的特权 -->
+                                <!-- 公共 我的特权 -->
                                 <a href="private.html" class="w-pro-private clear">
                                     我的特权
                                     <img src="img/private-icon.png" alt="img" class="fl">
@@ -231,7 +235,7 @@
                     </div>
                     <p class="person-name">iwen_d832942c</p>
                     <!-- w-recharge-pro-icon -->
-                    <!-- 未开通 -->
+                    <!-- 公共 未开通 -->
                     <p class="w-recharge-pro-icon clear w-block">
                         <a href="pro.html"><img src="img/pro-icon.png" alt="img" class="w-img"></a>
                         <a href="private.html">
@@ -239,7 +243,7 @@
                             <img src="img/kaitong1.png" alt="img">
                         </a>
                     </p>
-                    <!-- 已开通 -->
+                    <!-- 公共 已开通 -->
                     <p class="w-recharge-pro-icon clear ">
                         <a href="pro.html"><img src="img/pro-icon-active.png" alt="img" class="w-img"></a>
                         <a href="private.html">
@@ -251,9 +255,11 @@
                     <p class="person-asign"></p>
                     <hr />
                     <div class="recharge-list">
+                        <!--公共 首页 -->
                         <p class="recharge-list-index recharge-active">
                             <a href="/settings/profile">首页管理</a>
                         </p>
+                        <!--公共 pro -->
                         <p class="sucai-handle my-recharge">
                             <a href="pro-purchase.html">PRO特权</a>
                         </p>
@@ -287,10 +293,12 @@
                     </div>
                 </div>
                 <div class="wealth-right-warp fr" id="user-center-post-warp">
-                    <!-- user 内容  -->
+                    <!-- banner -->
                     <a href="" class="w-user-banner">
-                        <img src="http://cache.xiadele.com/bjj/xdl/billboards/e3b06805191aae3a5613ed60d7a24ae33c806149.png" alt="">
+                        <img src="http://cache.xiadele.com/bjj/xdl/billboards/e3b06805191aae3a5613ed60d7a24ae33c806149.png"
+                            alt="">
                     </a>
+                    <!-- list -->
                     <ul class="w-user-list clear">
                         <li>
                             <p class="w-user-list-title">余额</p>
@@ -313,147 +321,424 @@
                         </li>
                         <li>
                             <div class="w-user-box"></div>
-                            <a href="pro-purchase.html" class="w-user-list-btn qian">签到</a>
+                            <!--  添加w-block显示 -->
+                            <a href="javascript:;" class="w-user-list-btn w-qian w-wei  w-block">签到</a>
+                            <a href="javascript:;" class="w-user-list-btn w-qian w-yi">已签到</a>
+
                             <p class="w-user-list-qian">每日签到获2积分</p>
                             <a href="http://jf.banjiajia.com/" class="w-user-list-shop">积分商城></a>
+                            <span class="w-qiandao">+1</span>
                         </li>
-
                     </ul>
-                    <div class="wealth-right-warp-sm">
-                        <div class="sucai-warp">
-                            <p class="sucai-address">
-                                <a class="link link-active" href="/users/620476">全部(3)</a>
-                                <a class="link " href="/users/620476?filter=profiles">原创(0)</a>
-                                <a class="link " href="/users/620476?filter=marks">收藏(0)</a>
-                                <a class="link " href="/users/620476?filter=downloads">我的下载(3)</a>
-                                <a class="linkto-record" href="/users/620476/upload-records">上传记录</a>
-                                <a class="linkto-upload" href="/posts/new">上传素材</a>
-                            </p>
+                    <!-- 面包屑 -->
+                    <div class="w-user-breadnav">
+                        <p>快捷入口</p>
+                        <span>|</span>
+                        <ul>
+                            <li>
+                                <a href="http://www.xiadele.com/activities">
+                                    <img src="img/list_icon_01@3x.png" alt="img">
+                                    消息中心
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://www.xiadele.com/posts/new">
+                                    <img src="img/list_icon_02@3x.png" alt="img">
+                                    上传模型5:5分成
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://www.xiadele.com/3dmoxing.html?type=free#content">
+                                    <img src="img/list_icon_03@3x.png" alt="img">
+                                    免费模型
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://www.kongjiancool.com">
+                                    <img src="img/list_icon_04@3x.png" alt="img">
+                                    一键管理工具
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 免费推荐 -->
+                    <div class="w-free-recom">
+                        <div class="w-free-recom-title clear"><span></span> PRO免费模型推荐 <a class="fr"
+                                href="http://www.xiadele.com/3dmoxing.html?type=free#content">查看更多 ＞</a>
                         </div>
-                        <div class="sucai-warp">
-                            <ul class="design-book-ul design-book-all">
-                                <li class="design-book-all-li items-li" data-id="300792066">
-                                    <div class="design-book-img design-book-img-all">
-                                        <span class="delete-user-btn"></span>
-                                        <div class="del-firm">
-                                            确定删除下载记录?
-                                            <div class="del-rirm-yes">
-                                                <a title="删除下载记录" data-method="delete"
-                                                    href="/users/download-remove?id=300792066&amp;type=Post">确定</a>
-                                            </div>
-                                        </div>
-                                        <a target="_blank" href="http://www.xiadele.com/posts/300792066">
-                                            <img alt="北欧转角沙发挂画盆栽组合"
-                                                src="http://cache.xiadele.com/lili13.jpg/imagescover/fc980191cebaa5489c3018f15a224db986a8c8eb?imageView2/1/h/196/w/262" />
-                                        </a>
-                                        <div
-                                            class="design-book-collection design-book-collection-all similar-collection">
-                                            <span class="similar">找相似</span>
-                                            <span class="download-shop">
-                                                <span class="download"><a target="_blank"
-                                                        href="/posts/300792066#download-tag">下载</a></span>
-                                                <span class="shop-model-ceng"></span>
+                        <div class="swiper-container swiper-container1">
+                            <ul class="swiper-wrapper">
+                                <li class="swiper-slide">
+                                    <a class="w-slide-link" href=""
+                                        title="意大利Molteni&C品牌现代沙发茶几组合意大利Molteni&C品牌现代沙发茶几组合">
+                                        <img class="w-slide-img"
+                                            src="http://cache.xiadele.com/lili13.jpg/imagescover/fc980191cebaa5489c3018f15a224db986a8c8eb?imageView2/1/h/196/w/262"
+                                            alt="img">
+                                        <p>意大利Molteni&C品牌现代沙发茶几组合</p>
+                                        <p class="w-slide-tib clear">
+                                            <span class="w-slide-name fl">
+                                                <img src="http://cache.xiadele.com/assets/frontend/index/fenlei-0b1348ab0d4e0ef06346674cd746b22aad4e3dd54a0470b0e6e4d43c1a75ff1f.png"
+                                                    alt="img">
+                                                沙发组合
                                             </span>
-                                        </div>
-                                    </div>
-                                    <div class="design-book-txt design-book-txt-all">
-                                        <p class="design-book-txt-title design-book-txt-title-all">
-                                            <a target="_blank"
-                                                href="http://www.xiadele.com/posts/300792066">北欧转角沙发挂画盆栽组合</a>
-                                        </p>
-                                        <div class="design-book-txt-bottom design-book-txt-bottom-all">
-                                            <span class="fl name"><span><a target="_blank"
-                                                        href="/3dmoxing/shafazuhe-9-all.html">沙发组合</a></span></span>
-
-                                            <span class="fr count"><span>362</span><span>64</span></span>
-                                            <div class="clear"></div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="design-book-all-li items-li" data-id="300794794">
-                                    <div class="design-book-img design-book-img-all">
-                                        <span class="delete-user-btn"></span>
-                                        <div class="del-firm">
-                                            确定删除下载记录?
-                                            <div class="del-rirm-yes">
-                                                <a title="删除下载记录" data-method="delete"
-                                                    href="/users/download-remove?id=300794794&amp;type=Post">确定</a>
-                                            </div>
-                                        </div>
-                                        <a target="_blank" href="http://www.xiadele.com/posts/300794794">
-                                            <img alt="北欧卧室"
-                                                src="http://cache.xiadele.com/pptx16.jpg/imagescover/b13f82c5648cb68768ae817dcde294eebac85039?imageView2/1/h/196/w/262" />
-                                        </a>
-                                        <div
-                                            class="design-book-collection design-book-collection-all similar-collection">
-                                            <span class="similar">找相似</span>
-                                            <span class="download-shop">
-                                                <span class="download"><a target="_blank"
-                                                        href="/posts/300794794#download-tag">下载</a></span>
-                                                <span class="shop-model-ceng"></span>
+                                            <span class="w-slide-count fl">
+                                                <img src="http://cache.xiadele.com/assets/frontend/index/eye-8788f13f59cb319e9601d5cf170be5e6f07bdb6afeb87a70d94a34e5110acbe6.png"
+                                                    alt="img">
+                                                374
                                             </span>
-                                        </div>
-                                    </div>
-                                    <div class="design-book-txt design-book-txt-all">
-                                        <p class="design-book-txt-title design-book-txt-title-all">
-                                            <a target="_blank" href="http://www.xiadele.com/posts/300794794">北欧卧室</a>
-                                        </p>
-                                        <div class="design-book-txt-bottom design-book-txt-bottom-all">
-                                            <span class="fl name"><span><a target="_blank"
-                                                        href="/3dmoxing/woshi-10207-all.html">卧室</a></span></span>
-
-                                            <span class="fr count"><span>263</span><span>41</span></span>
-                                            <div class="clear"></div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="design-book-all-li items-li" data-id="300796538">
-                                    <div class="design-book-img design-book-img-all">
-                                        <span class="delete-user-btn"></span>
-                                        <div class="del-firm">
-                                            确定删除下载记录?
-                                            <div class="del-rirm-yes">
-                                                <a title="删除下载记录" data-method="delete"
-                                                    href="/users/download-remove?id=300796538&amp;type=Post">确定</a>
-                                            </div>
-                                        </div>
-                                        <a target="_blank" href="http://www.xiadele.com/posts/300796538">
-                                            <img alt="现代沙发凳"
-                                                src="http://cache.xiadele.com/fdfd39.jpg/imagescover/a55d39d506484a9f57eeef1bce561dde8be519ab?imageView2/1/h/196/w/262" />
-                                        </a>
-                                        <div
-                                            class="design-book-collection design-book-collection-all similar-collection">
-                                            <span class="similar">找相似</span>
-                                            <span class="download-shop">
-                                                <span class="download"><a target="_blank"
-                                                        href="/posts/300796538#download-tag">下载</a></span>
-                                                <span class="shop-model-ceng"></span>
+                                            <span class="w-slide-down fl">
+                                                <img src="http://cache.xiadele.com/assets/frontend/index/xiazai-38cb0fe5208fa04671254fceb30053d13b401c99397f67dbf1807b1d69ebff4d.png"
+                                                    alt="img">
+                                                42
                                             </span>
-                                        </div>
-                                    </div>
-                                    <div class="design-book-txt design-book-txt-all">
-                                        <p class="design-book-txt-title design-book-txt-title-all">
-                                            <a target="_blank" href="http://www.xiadele.com/posts/300796538">现代沙发凳</a>
                                         </p>
-                                        <div class="design-book-txt-bottom design-book-txt-bottom-all">
-                                            <span class="fl name"><span><a target="_blank"
-                                                        href="/3dmoxing/shafajiaota-1041790-all.html">沙发脚踏</a></span></span>
-
-                                            <span class="fr count"><span>163</span><span>15</span></span>
-                                            <div class="clear"></div>
-                                        </div>
-                                    </div>
+                                    </a>
                                 </li>
-                                <div class="clear"></div>
+                                <li class="swiper-slide">
+                                    <a class="w-slide-link" href=""
+                                        title="意大利Molteni&C品牌现代沙发茶几组合意大利Molteni&C品牌现代沙发茶几组合">
+                                        <img class="w-slide-img"
+                                            src="http://cache.xiadele.com/lili13.jpg/imagescover/fc980191cebaa5489c3018f15a224db986a8c8eb?imageView2/1/h/196/w/262"
+                                            alt="img">
+                                        <p>意大利Molteni&C品牌现代沙发茶几组合</p>
+                                        <p class="w-slide-tib clear">
+                                            <span class="w-slide-name fl">
+                                                <img src="http://cache.xiadele.com/assets/frontend/index/fenlei-0b1348ab0d4e0ef06346674cd746b22aad4e3dd54a0470b0e6e4d43c1a75ff1f.png"
+                                                    alt="img">
+                                                沙发组合
+                                            </span>
+                                            <span class="w-slide-count fl">
+                                                <img src="http://cache.xiadele.com/assets/frontend/index/eye-8788f13f59cb319e9601d5cf170be5e6f07bdb6afeb87a70d94a34e5110acbe6.png"
+                                                    alt="img">
+                                                374
+                                            </span>
+                                            <span class="w-slide-down fl">
+                                                <img src="http://cache.xiadele.com/assets/frontend/index/xiazai-38cb0fe5208fa04671254fceb30053d13b401c99397f67dbf1807b1d69ebff4d.png"
+                                                    alt="img">
+                                                42
+                                            </span>
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a class="w-slide-link" href=""
+                                        title="意大利Molteni&C品牌现代沙发茶几组合意大利Molteni&C品牌现代沙发茶几组合">
+                                        <img class="w-slide-img"
+                                            src="http://cache.xiadele.com/lili13.jpg/imagescover/fc980191cebaa5489c3018f15a224db986a8c8eb?imageView2/1/h/196/w/262"
+                                            alt="img">
+                                        <p>意大利Molteni&C品牌现代沙发茶几组合</p>
+                                        <p class="w-slide-tib clear">
+                                            <span class="w-slide-name fl">
+                                                <img src="http://cache.xiadele.com/assets/frontend/index/fenlei-0b1348ab0d4e0ef06346674cd746b22aad4e3dd54a0470b0e6e4d43c1a75ff1f.png"
+                                                    alt="img">
+                                                沙发组合
+                                            </span>
+                                            <span class="w-slide-count fl">
+                                                <img src="http://cache.xiadele.com/assets/frontend/index/eye-8788f13f59cb319e9601d5cf170be5e6f07bdb6afeb87a70d94a34e5110acbe6.png"
+                                                    alt="img">
+                                                374
+                                            </span>
+                                            <span class="w-slide-down fl">
+                                                <img src="http://cache.xiadele.com/assets/frontend/index/xiazai-38cb0fe5208fa04671254fceb30053d13b401c99397f67dbf1807b1d69ebff4d.png"
+                                                    alt="img">
+                                                42
+                                            </span>
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a class="w-slide-link" href=""
+                                        title="意大利Molteni&C品牌现代沙发茶几组合意大利Molteni&C品牌现代沙发茶几组合">
+                                        <img class="w-slide-img"
+                                            src="http://cache.xiadele.com/lili13.jpg/imagescover/fc980191cebaa5489c3018f15a224db986a8c8eb?imageView2/1/h/196/w/262"
+                                            alt="img">
+                                        <p>意大利Molteni&C品牌现代沙发茶几组合</p>
+                                        <p class="w-slide-tib clear">
+                                            <span class="w-slide-name fl">
+                                                <img src="http://cache.xiadele.com/assets/frontend/index/fenlei-0b1348ab0d4e0ef06346674cd746b22aad4e3dd54a0470b0e6e4d43c1a75ff1f.png"
+                                                    alt="img">
+                                                沙发组合
+                                            </span>
+                                            <span class="w-slide-count fl">
+                                                <img src="http://cache.xiadele.com/assets/frontend/index/eye-8788f13f59cb319e9601d5cf170be5e6f07bdb6afeb87a70d94a34e5110acbe6.png"
+                                                    alt="img">
+                                                374
+                                            </span>
+                                            <span class="w-slide-down fl">
+                                                <img src="http://cache.xiadele.com/assets/frontend/index/xiazai-38cb0fe5208fa04671254fceb30053d13b401c99397f67dbf1807b1d69ebff4d.png"
+                                                    alt="img">
+                                                42
+                                            </span>
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a class="w-slide-link" href=""
+                                        title="意大利Molteni&C品牌现代沙发茶几组合意大利Molteni&C品牌现代沙发茶几组合">
+                                        <img class="w-slide-img"
+                                            src="http://cache.xiadele.com/lili13.jpg/imagescover/fc980191cebaa5489c3018f15a224db986a8c8eb?imageView2/1/h/196/w/262"
+                                            alt="img">
+                                        <p>意大利Molteni&C品牌现代沙发茶几组合</p>
+                                        <p class="w-slide-tib clear">
+                                            <span class="w-slide-name fl">
+                                                <img src="http://cache.xiadele.com/assets/frontend/index/fenlei-0b1348ab0d4e0ef06346674cd746b22aad4e3dd54a0470b0e6e4d43c1a75ff1f.png"
+                                                    alt="img">
+                                                沙发组合
+                                            </span>
+                                            <span class="w-slide-count fl">
+                                                <img src="http://cache.xiadele.com/assets/frontend/index/eye-8788f13f59cb319e9601d5cf170be5e6f07bdb6afeb87a70d94a34e5110acbe6.png"
+                                                    alt="img">
+                                                374
+                                            </span>
+                                            <span class="w-slide-down fl">
+                                                <img src="http://cache.xiadele.com/assets/frontend/index/xiazai-38cb0fe5208fa04671254fceb30053d13b401c99397f67dbf1807b1d69ebff4d.png"
+                                                    alt="img">
+                                                42
+                                            </span>
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a class="w-slide-link" href=""
+                                        title="意大利Molteni&C品牌现代沙发茶几组合意大利Molteni&C品牌现代沙发茶几组合">
+                                        <img class="w-slide-img"
+                                            src="http://cache.xiadele.com/lili13.jpg/imagescover/fc980191cebaa5489c3018f15a224db986a8c8eb?imageView2/1/h/196/w/262"
+                                            alt="img">
+                                        <p>意大利Molteni&C品牌现代沙发茶几组合</p>
+                                        <p class="w-slide-tib clear">
+                                            <span class="w-slide-name fl">
+                                                <img src="http://cache.xiadele.com/assets/frontend/index/fenlei-0b1348ab0d4e0ef06346674cd746b22aad4e3dd54a0470b0e6e4d43c1a75ff1f.png"
+                                                    alt="img">
+                                                沙发组合
+                                            </span>
+                                            <span class="w-slide-count fl">
+                                                <img src="http://cache.xiadele.com/assets/frontend/index/eye-8788f13f59cb319e9601d5cf170be5e6f07bdb6afeb87a70d94a34e5110acbe6.png"
+                                                    alt="img">
+                                                374
+                                            </span>
+                                            <span class="w-slide-down fl">
+                                                <img src="http://cache.xiadele.com/assets/frontend/index/xiazai-38cb0fe5208fa04671254fceb30053d13b401c99397f67dbf1807b1d69ebff4d.png"
+                                                    alt="img">
+                                                42
+                                            </span>
+                                        </p>
+                                    </a>
+                                </li>
                             </ul>
+                            <!-- Add Pagination -->
+                            <div class="swiper-pagination swiper-pagination1"></div>
                         </div>
-
-                        <div class="page-count">
-
+                    </div>
+                    <!-- 精品推荐 -->
+                    <div class="w-free-recom">
+                        <div class="w-free-recom-title clear"><span></span> 精品推荐 <a class="fr"
+                                href="http://www.xiadele.com/3dmoxing.html?type=unfree#content">查看更多 ＞</a>
+                        </div>
+                        <div class="swiper-container swiper-container2">
+                            <ul class="swiper-wrapper">
+                                <li class="swiper-slide">
+                                    <a class="w-slide-link" href=""
+                                        title="意大利Molteni&C品牌现代沙发茶几组合意大利Molteni&C品牌现代沙发茶几组合">
+                                        <img class="w-slide-img"
+                                            src="http://cache.xiadele.com/lili13.jpg/imagescover/fc980191cebaa5489c3018f15a224db986a8c8eb?imageView2/1/h/196/w/262"
+                                            alt="img">
+                                        <p>意大利Molteni&C品牌现代沙发茶几组合</p>
+                                        <p class="w-slide-tib clear">
+                                            <span class="w-slide-name fl">
+                                                <img src="http://cache.xiadele.com/assets/frontend/index/fenlei-0b1348ab0d4e0ef06346674cd746b22aad4e3dd54a0470b0e6e4d43c1a75ff1f.png"
+                                                    alt="img">
+                                                沙发组合
+                                            </span>
+                                            <span class="w-slide-count fl">
+                                                <img src="http://cache.xiadele.com/assets/frontend/index/eye-8788f13f59cb319e9601d5cf170be5e6f07bdb6afeb87a70d94a34e5110acbe6.png"
+                                                    alt="img">
+                                                374
+                                            </span>
+                                            <span class="w-slide-down fl">
+                                                <img src="http://cache.xiadele.com/assets/frontend/index/xiazai-38cb0fe5208fa04671254fceb30053d13b401c99397f67dbf1807b1d69ebff4d.png"
+                                                    alt="img">
+                                                42
+                                            </span>
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a class="w-slide-link" href=""
+                                        title="意大利Molteni&C品牌现代沙发茶几组合意大利Molteni&C品牌现代沙发茶几组合">
+                                        <img class="w-slide-img"
+                                            src="http://cache.xiadele.com/lili13.jpg/imagescover/fc980191cebaa5489c3018f15a224db986a8c8eb?imageView2/1/h/196/w/262"
+                                            alt="img">
+                                        <p>意大利Molteni&C品牌现代沙发茶几组合</p>
+                                        <p class="w-slide-tib clear">
+                                            <span class="w-slide-name fl">
+                                                <img src="http://cache.xiadele.com/assets/frontend/index/fenlei-0b1348ab0d4e0ef06346674cd746b22aad4e3dd54a0470b0e6e4d43c1a75ff1f.png"
+                                                    alt="img">
+                                                沙发组合
+                                            </span>
+                                            <span class="w-slide-count fl">
+                                                <img src="http://cache.xiadele.com/assets/frontend/index/eye-8788f13f59cb319e9601d5cf170be5e6f07bdb6afeb87a70d94a34e5110acbe6.png"
+                                                    alt="img">
+                                                374
+                                            </span>
+                                            <span class="w-slide-down fl">
+                                                <img src="http://cache.xiadele.com/assets/frontend/index/xiazai-38cb0fe5208fa04671254fceb30053d13b401c99397f67dbf1807b1d69ebff4d.png"
+                                                    alt="img">
+                                                42
+                                            </span>
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a class="w-slide-link" href=""
+                                        title="意大利Molteni&C品牌现代沙发茶几组合意大利Molteni&C品牌现代沙发茶几组合">
+                                        <img class="w-slide-img"
+                                            src="http://cache.xiadele.com/lili13.jpg/imagescover/fc980191cebaa5489c3018f15a224db986a8c8eb?imageView2/1/h/196/w/262"
+                                            alt="img">
+                                        <p>意大利Molteni&C品牌现代沙发茶几组合</p>
+                                        <p class="w-slide-tib clear">
+                                            <span class="w-slide-name fl">
+                                                <img src="http://cache.xiadele.com/assets/frontend/index/fenlei-0b1348ab0d4e0ef06346674cd746b22aad4e3dd54a0470b0e6e4d43c1a75ff1f.png"
+                                                    alt="img">
+                                                沙发组合
+                                            </span>
+                                            <span class="w-slide-count fl">
+                                                <img src="http://cache.xiadele.com/assets/frontend/index/eye-8788f13f59cb319e9601d5cf170be5e6f07bdb6afeb87a70d94a34e5110acbe6.png"
+                                                    alt="img">
+                                                374
+                                            </span>
+                                            <span class="w-slide-down fl">
+                                                <img src="http://cache.xiadele.com/assets/frontend/index/xiazai-38cb0fe5208fa04671254fceb30053d13b401c99397f67dbf1807b1d69ebff4d.png"
+                                                    alt="img">
+                                                42
+                                            </span>
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a class="w-slide-link" href=""
+                                        title="意大利Molteni&C品牌现代沙发茶几组合意大利Molteni&C品牌现代沙发茶几组合">
+                                        <img class="w-slide-img"
+                                            src="http://cache.xiadele.com/lili13.jpg/imagescover/fc980191cebaa5489c3018f15a224db986a8c8eb?imageView2/1/h/196/w/262"
+                                            alt="img">
+                                        <p>意大利Molteni&C品牌现代沙发茶几组合</p>
+                                        <p class="w-slide-tib clear">
+                                            <span class="w-slide-name fl">
+                                                <img src="http://cache.xiadele.com/assets/frontend/index/fenlei-0b1348ab0d4e0ef06346674cd746b22aad4e3dd54a0470b0e6e4d43c1a75ff1f.png"
+                                                    alt="img">
+                                                沙发组合
+                                            </span>
+                                            <span class="w-slide-count fl">
+                                                <img src="http://cache.xiadele.com/assets/frontend/index/eye-8788f13f59cb319e9601d5cf170be5e6f07bdb6afeb87a70d94a34e5110acbe6.png"
+                                                    alt="img">
+                                                374
+                                            </span>
+                                            <span class="w-slide-down fl">
+                                                <img src="http://cache.xiadele.com/assets/frontend/index/xiazai-38cb0fe5208fa04671254fceb30053d13b401c99397f67dbf1807b1d69ebff4d.png"
+                                                    alt="img">
+                                                42
+                                            </span>
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a class="w-slide-link" href=""
+                                        title="意大利Molteni&C品牌现代沙发茶几组合意大利Molteni&C品牌现代沙发茶几组合">
+                                        <img class="w-slide-img"
+                                            src="http://cache.xiadele.com/lili13.jpg/imagescover/fc980191cebaa5489c3018f15a224db986a8c8eb?imageView2/1/h/196/w/262"
+                                            alt="img">
+                                        <p>意大利Molteni&C品牌现代沙发茶几组合</p>
+                                        <p class="w-slide-tib clear">
+                                            <span class="w-slide-name fl">
+                                                <img src="http://cache.xiadele.com/assets/frontend/index/fenlei-0b1348ab0d4e0ef06346674cd746b22aad4e3dd54a0470b0e6e4d43c1a75ff1f.png"
+                                                    alt="img">
+                                                沙发组合
+                                            </span>
+                                            <span class="w-slide-count fl">
+                                                <img src="http://cache.xiadele.com/assets/frontend/index/eye-8788f13f59cb319e9601d5cf170be5e6f07bdb6afeb87a70d94a34e5110acbe6.png"
+                                                    alt="img">
+                                                374
+                                            </span>
+                                            <span class="w-slide-down fl">
+                                                <img src="http://cache.xiadele.com/assets/frontend/index/xiazai-38cb0fe5208fa04671254fceb30053d13b401c99397f67dbf1807b1d69ebff4d.png"
+                                                    alt="img">
+                                                42
+                                            </span>
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a class="w-slide-link" href=""
+                                        title="意大利Molteni&C品牌现代沙发茶几组合意大利Molteni&C品牌现代沙发茶几组合">
+                                        <img class="w-slide-img"
+                                            src="http://cache.xiadele.com/lili13.jpg/imagescover/fc980191cebaa5489c3018f15a224db986a8c8eb?imageView2/1/h/196/w/262"
+                                            alt="img">
+                                        <p>意大利Molteni&C品牌现代沙发茶几组合</p>
+                                        <p class="w-slide-tib clear">
+                                            <span class="w-slide-name fl">
+                                                <img src="http://cache.xiadele.com/assets/frontend/index/fenlei-0b1348ab0d4e0ef06346674cd746b22aad4e3dd54a0470b0e6e4d43c1a75ff1f.png"
+                                                    alt="img">
+                                                沙发组合
+                                            </span>
+                                            <span class="w-slide-count fl">
+                                                <img src="http://cache.xiadele.com/assets/frontend/index/eye-8788f13f59cb319e9601d5cf170be5e6f07bdb6afeb87a70d94a34e5110acbe6.png"
+                                                    alt="img">
+                                                374
+                                            </span>
+                                            <span class="w-slide-down fl">
+                                                <img src="http://cache.xiadele.com/assets/frontend/index/xiazai-38cb0fe5208fa04671254fceb30053d13b401c99397f67dbf1807b1d69ebff4d.png"
+                                                    alt="img">
+                                                42
+                                            </span>
+                                        </p>
+                                    </a>
+                                </li>
+                            </ul>
+                            <!-- Add Pagination -->
+                            <div class="swiper-pagination swiper-pagination2"></div>
                         </div>
                     </div>
                 </div>
-
+                <script>
+                    // 签到
+                    $('.w-wei').click(function(){
+                        $('.w-qiandao').css('display','block')
+                        $('.w-qiandao').css('opacity','1')
+                        $('.w-qiandao').stop().animate({
+                            'top':'40px',
+                            'opacity':'0.5'
+                        },500,function(){
+                            $('.w-qiandao').css('top','50px')
+                            $('.w-qiandao').css('opacity','1')
+                            $('.w-qiandao').css('display','none')
+                        })
+                    })
+                    // 免费推荐
+                    var swiper = new Swiper('.swiper-container1', {
+                        slidesPerView: 3,
+                        spaceBetween: 20,
+                        loop: true,
+                        pagination: {
+                            el: '.swiper-pagination1',
+                            clickable: true,
+                        },
+                        autoplay: {
+                            delay: 3000,
+                        }
+                    });
+                    // 精品推荐
+                    var swiper = new Swiper('.swiper-container2', {
+                        slidesPerView: 3,
+                        spaceBetween: 20,
+                        loop: true,
+                        pagination: {
+                            el: '.swiper-pagination2',
+                            clickable: true,
+                        },
+                        autoplay: {
+                            delay: 3500,
+                        }
+                    });
+                </script>
 
                 <div class="clear"></div>
             </div>
@@ -655,7 +940,7 @@
 
         <script>
             $(function () {
-                // 动态添加right-nav add
+                // 公共 动态添加right-nav add    
                 var right = '        <div class="right-nav-pro-box"><a href="pro.html" class="right-nav-pro"><img src="img/right-nav8.png" alt="img" class="w-img"></a></div>'
                 $('.right-nav').append(right)
                 $('.right-nav-pro').css('display', 'block')
