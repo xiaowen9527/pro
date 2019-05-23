@@ -247,10 +247,10 @@
                     <p class="person-asign"></p>
                     <hr />
                     <div class="recharge-list">
-                        <p class="recharge-list-index recharge-active">
-                            <a href="/settings/profile">首页管理</a>
+                        <p class="recharge-list-index">
+                            <a href="user.html">首页管理</a>
                         </p>
-                        <p class="sucai-handle my-recharge">
+                        <p class="sucai-handle w-pro-menu my-recharge recharge-active">
                             <a href="pro-purchase.html">PRO特权</a>
                         </p>
                         <p class="recharge-my-sucai recharge-list-item">我的素材</p>
@@ -288,9 +288,10 @@
                     <div class="w-pro-message  w-pro-message-to w-block">
                         <div class="w-pro-message-fl fl">
                             <p class="w-pro-message-name">PRO特权</p>
-                            <p class="w-pro-message-time"><span>你正在使用PRO特权</span><span>|</span><span>2017-10-10 过期</span></p>
+                            <p class="w-pro-message-time"><span>你正在使用PRO特权</span><span>|</span><span>2017-10-10
+                                    过期</span></p>
                         </div>
-                        <a class="w-pro-message-fr fr" href="javascript:;">立即升级</a>
+                        <a class="w-pro-message-fr fr" href="javascript:;" onclick="window.scrollTo(0,document.documentElement.clientHeight)">立即升级</a>
                     </div>
                     <!-- 还没购买 -->
                     <div class="w-pro-message w-pro-message-no">
@@ -314,6 +315,108 @@
                         </p>
 
                         <p class="w-pro-tequan-title">PRO全部特权</p>
+                        <ul class="w-pro-tequan-box clear">
+                            <li>
+                                <p>10张</p>
+                                <p>赠送下载券</p>
+                            </li>
+                            <li>
+                                <p>30元</p>
+                                <p>赠送渲染券</p>
+                            </li>
+                            <li>
+                                <p>9折</p>
+                                <p>下载折扣</p>
+                            </li>
+                            <li>
+                                <p>9折</p>
+                                <p>渲染折扣</p>
+                            </li>
+                            <li>
+                                <p>39分</p>
+                                <p>赠送积分</p>
+                            </li>
+                            <li>
+                                <p>尊享</p>
+                                <p>PRO专区模型</p>
+                            </li>
+                            <li>
+                                <p>尊享</p>
+                                <p>专区贴图下载</p>
+                            </li>
+                        </ul>
+
+                        <p class="w-pro-tequan-title">选择购买类型</p>
+                        <ul class="w-pro-type clear">
+                            <li>
+                                <p class="w-pro-type-title">1个月</p>
+                                <p class="w-pro-type-price"><strong>39</strong>元/月</p>
+                                <p class="w-pro-type-tib">原价<s>58元</s></p>
+                            </li>
+                            <li class="w-active">
+                                <p class="w-pro-type-title">1个月</p>
+                                <p class="w-pro-type-price"><strong>39</strong>元/月</p>
+                                <p class="w-pro-type-tib">原价<s>58元</s></p>
+                                <span class="w-pro-type-desc">推荐</span>
+                            </li>
+                            <li>
+                                <p class="w-pro-type-title">1个月</p>
+                                <p class="w-pro-type-price"><strong>39</strong>元/月</p>
+                                <p class="w-pro-type-tib">原价<s>58元</s></p>
+                                <span class="w-pro-type-desc">7.5折</span>
+                            </li>
+                            <li>
+                                <p class="w-pro-type-title">1个月</p>
+                                <p class="w-pro-type-price"><strong>39</strong>元/月</p>
+                                <p class="w-pro-type-tib">原价<s>58元</s></p>
+                                <span class="w-pro-type-desc">6.5折</span>
+                            </li>
+                        </ul>
+                        <script>
+                            // 选择商品
+                            $(function () {
+                                $('.w-pro-type li').click(function () {
+                                    $(this).addClass('w-active').siblings().removeClass('w-active')
+                                })
+                            })
+                        </script>
+                        <p class="w-pro-tequan-title">支付方式</p>
+                        <!-- 这个支付与原网站资产余额页面的支付是一样的 -->
+                        <div class="w-payment-type">
+                            <p class="select-payment">
+                                <span data-name="wx" class="weixin-paymemt select-payment-active">微信支付</span>
+                                <span data-name="ali" class="alipay-payment">支付宝支付</span>
+                            </p>
+                            <div class="orcode-warp">
+                                <div class="order-number">
+                                    <p>订单已创建，请在30分钟内完成支付。</p>
+
+                                </div>
+                                <div class="wx-pay">
+                                    <div class="orcode" id="wx-qrcode">
+                                        <canvas width="100" height="100"></canvas>
+                                    </div>
+                                    <p class="select-payment-txt">使用微信扫码付款</p>
+                                    <div class="payment-img"><img
+                                            src="http://cache.xiadele.com/assets/frontend/wealth/wx-c00ca153a3c6df72cc18108b887029183590b8c89e1499b1ef1ea92b12f59cb6.png">
+                                    </div>
+                                </div>
+                                <div class="ali-pay" style="display: none">
+                                    <div class="orcode" id="ali-qrcode">获取失败</div>
+                                    <div class="payment-img" title="跳转支付宝网页版支付"><a id="ali-redirect-url"
+                                            href="https://mapi.alipay.com/gateway.do?service=create_direct_pay_by_user&amp;_input_charset=utf-8&amp;partner=2088221445421313&amp;seller_id=2088221445421313&amp;payment_type=1&amp;subject=%E5%85%85%E5%80%BC%EF%BF%A5+53.0%E4%BD%99%E9%A2%9D&amp;out_trade_no=4ab576f9d9ac4024b440bf041cc9c2e1&amp;total_fee=50.0&amp;it_b_pay=27m&amp;notify_url=http%3A%2F%2Fwww.xiadele.com%2Falipay-notify%2Fpaid&amp;show_url=http%3A%2F%2Fwww.xiadele.com%2Fusers%2F620476%3Fdo%3Drecharge&amp;return_url=http%3A%2F%2Fwww.xiadele.com%2Fusers%2F620476%3Fdo%3Drecharged&amp;sign_type=MD5&amp;sign=e90a0f9c319050ec73e1ef2003543d66"><img
+                                                src="http://cache.xiadele.com/assets/frontend/wealth/ali-1dc9a80fc9ca66f26c4665d8237eb41f0f99cdeabe0660a1e921ae53b83618e2.png"></a>
+                                    </div>
+                                    <p class="mess-ali">点击跳转支付宝支付</p>
+                                </div>
+                                <div class="payment-price">
+                                    <p>应付金额：<span class="real-price">39.0</span>元<span class="discount-warp">，赠送：下载券<em
+                                                style="font-size: 20px; color:ec5e5e">2</em>张&nbsp;</span>
+                                    </p>
+                                    <a href="/roadmap/services#agree" target="_blank">《VIP服务协议》</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -517,7 +620,6 @@
 
         <script>
             $(function () {
-                // 公共 动态添加right-nav add    
                 var right = '        <div class="right-nav-pro-box"><a href="pro.html" class="right-nav-pro"><img src="img/right-nav8.png" alt="img" class="w-img"></a></div>'
                 $('.right-nav').append(right)
                 $('.right-nav-pro').css('display', 'block')
