@@ -231,14 +231,14 @@
                     <p class="person-name">iwen_d832942c</p>
                     <p class="w-recharge-pro-icon clear w-block">
                         <a href="pro.html"><img src="img/pro-icon.png" alt="img" class="w-img"></a>
-                        <a href="private.html">
+                        <a href="pro-purchase.html">
                             <img src="img/kaitong2.png" alt="img">
                             <img src="img/kaitong1.png" alt="img">
                         </a>
                     </p>
                     <p class="w-recharge-pro-icon clear ">
                         <a href="pro.html"><img src="img/pro-icon-active.png" alt="img" class="w-img"></a>
-                        <a href="private.html">
+                        <a href="pro-purchase.html">
                             <img src="img/xufei1.png" alt="img">
                             <img src="img/xufei2.png" alt="img">
                         </a>
@@ -311,7 +311,7 @@
 
                         <p class="w-pro-purchase-menu clear">
                             <a href="private.html" class="w-pro-purchase-nav">账户特权</a>
-                            <a href="javascript:;" class="w-pro-purchase-nav w-active">开通PRO</a>
+                            <a href="javascript:;" class="w-pro-purchase-nav w-block">开通PRO</a>
                         </p>
 
                         <p class="w-pro-tequan-title">PRO全部特权</p>
@@ -353,7 +353,7 @@
                                 <p class="w-pro-type-price"><strong>39</strong>元/月</p>
                                 <p class="w-pro-type-tib">原价<s>58元</s></p>
                             </li>
-                            <li class="w-active">
+                            <li class="w-block">
                                 <p class="w-pro-type-title">1个月</p>
                                 <p class="w-pro-type-price"><strong>39</strong>元/月</p>
                                 <p class="w-pro-type-tib">原价<s>58元</s></p>
@@ -376,13 +376,13 @@
                             // 选择商品
                             $(function () {
                                 $('.w-pro-type li').click(function () {
-                                    $(this).addClass('w-active').siblings().removeClass('w-active')
+                                    $(this).addClass('w-block').siblings().removeClass('w-block')
                                 })
                             })
                         </script>
                         <p class="w-pro-tequan-title">支付方式</p>
-                        <!-- 这个支付与原网站资产余额页面的支付是一样的 -->
-                        <div class="w-payment-type">
+                        <!-- 这个支付与原网站资产余额页面的支付是一样的，添加了类名w-payment-type -->
+                        <div class="payment-type w-payment-type">
                             <p class="select-payment">
                                 <span data-name="wx" class="weixin-paymemt select-payment-active">微信支付</span>
                                 <span data-name="ali" class="alipay-payment">支付宝支付</span>

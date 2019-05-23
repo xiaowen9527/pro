@@ -606,10 +606,12 @@
 
 .w-pro-message.w-pro-message-no {
     background: url(img/w-pro-message1.png) center no-repeat;
+    background-size: 100%;
 }
 
 .w-pro-message.w-pro-message-to {
     background: url(img/w-pro-message2.png) center no-repeat;
+    background-size: 100%;
 }
 
 .w-pro-message-fl {
@@ -680,7 +682,7 @@
     line-height: 16px;
 }
 
-.w-pro-purchase-nav.w-active {
+.w-pro-purchase-nav.w-block {
     color: #e5c287;
     border-bottom: 2px solid #c58a12
 }
@@ -821,21 +823,16 @@
     cursor: pointer;
 }
 
-.w-pro-type li.w-active,.w-pro-type li:hover {
+.w-pro-type li.w-block, .w-pro-type li:hover {
     background-image: linear-gradient( #fff9f2, #fff9f2), linear-gradient( #c58a12, #c58a12);
     border: solid 1px #e6ba78;
 }
-.w-pro-type-desc{
+
+.w-pro-type-desc {
     width: 38px;
-	height: 22px;
-	background-image: linear-gradient(0deg, 
-		#27272e 0%, 
-		#636261 100%), 
-	linear-gradient(
-		#010101, 
-		#010101);
-	background-blend-mode: normal, 
-		normal;
+    height: 22px;
+    background-image: linear-gradient(0deg, #27272e 0%, #636261 100%), linear-gradient( #010101, #010101);
+    background-blend-mode: normal, normal;
     border-radius: 0px 3px 0px 6px;
     line-height: 22px;
     text-align: center;
@@ -845,6 +842,7 @@
     font-size: 12px;
     color: #e5c287;
 }
+
 .w-pro-type-title {
     font-size: 22px;
     color: #333;
@@ -873,22 +871,24 @@
     text-align: center;
     margin-top: 18px;
 }
-.w-pro-type-pay{
+
+.w-pro-type-pay {
     position: relative;
     height: 277px;
     box-sizing: content-box;
     padding-bottom: 20px;
 }
-.w-pro-type-pay a{
+
+.w-pro-type-pay a {
     margin-top: 20px;
     display: block;
     float: left;
     width: 120px;
     height: 34px;
     background-color: #fff;
-	border-radius: 0px 4px 0px 0px;
-    border: solid 1px #eeeeee;    
-    font-size:14px;
+    border-radius: 0px 4px 0px 0px;
+    border: solid 1px #eeeeee;
+    font-size: 14px;
     color: #999;
     line-height: 34px;
     text-align: center;
@@ -896,25 +896,23 @@
     left: 120px;
     z-index: 12;
 }
-.w-pro-type-pay a:nth-child(1){
+
+.w-pro-type-pay a:nth-child(1) {
     background-color: #fafafa;
     color: #333333;
     border-bottom: none;
     left: 0;
 }
 
-.w-pro-type-weixin{
+.w-pro-type-weixin {
     width: 778px;
-	height: 225px;
-	background-color: #fafafa;
+    height: 225px;
+    background-color: #fafafa;
     border: solid 1px #eeeeee;
     position: absolute;
     top: 53px;
     z-index: 10;
 }
-
-
-
 
 .w-payment-type {
     width: 778px;
@@ -1052,16 +1050,14 @@
     color: #2594F0
 }
 
-
-
 /* private 账户特权 */
-.w-private-container{
+
+.w-private-container {
     width: 100%;
-    padding: 0 30px;
     height: auto;
 }
 
-.w-private-no{
+.w-private-no {
     height: 696px;
     width: 100%;
     background-size: 375px;
@@ -1069,13 +1065,77 @@
     background-repeat: no-repeat;
     background-position: center 105px;
     padding-top: 445px;
+    display: none;
 }
-.w-private-no p{
+
+.w-private-no p {
     font-size: 18px;
     color: #666666;
     text-align: center;
     line-height: 28px;
 }
+
+.w-private-list {
+    display: none;
+    width: 100%;
+    height: 696px;
+    padding-top: 10px;
+}
+
+.w-private-list li{
+    float: left;
+    width: 283px;
+    height: 157px;
+    margin-top: 20px;
+    margin-right: 20px;
+    background-color: #f8f8f8;
+	border-radius: 4px;
+}
+
+.w-private-list li:nth-child(3n){
+    margin-right:0;
+}
+
+.w-private-list-title{
+    text-align: center;
+    margin-top: 16px;
+    line-height: 38px;
+    color: #333333;
+    font-size: 20px;
+}
+.w-private-list-tib{
+    text-align: center;
+    line-height: 30px;
+    font-size: 18px;
+    color: #666666;
+}
+
+.w-private-list li p:nth-child(3){
+	width: 110px;
+	height: 36px;
+	background-image: linear-gradient(180deg, 
+		#e6c58a 0%, 
+		#dfb676 50%, 
+		#d8a661 100%), 
+	linear-gradient(
+		#cccccc, 
+		#cccccc);
+	background-blend-mode: normal, 
+		normal;
+    border-radius: 4px;
+    display: block;
+    text-align: center;
+    line-height: 36px;
+    font-size: 16px;
+    color: #fff;
+    margin:15px auto 0;    
+}
+
+.w-private-list li p.to{
+    width: 150px;
+    background: #ccc;
+}
+
 
 
 
