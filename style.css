@@ -32,9 +32,11 @@
     display: block;
     margin-right: 65px;
 }
-.web .header .head-body .login-message-group .pt .pt-person-info{
+
+.web .header .head-body .login-message-group .pt .pt-person-info {
     height: 300px;
 }
+
 .w-pro-private {
     margin-bottom: 5px;
     width: 254px;
@@ -47,7 +49,8 @@
     position: relative;
     font-family: 'Microsoft YaHei'
 }
-.w-pro-private img:nth-child(2),.w-pro-private img:nth-child(3){
+
+.w-pro-private img:nth-child(2), .w-pro-private img:nth-child(3) {
     width: 254px;
     height: 36px;
     position: absolute;
@@ -57,13 +60,16 @@
     z-index: -1;
     margin: 0;
 }
-.w-pro-private img:nth-child(2){
+
+.w-pro-private img:nth-child(2) {
     display: block
 }
-.w-pro-private:hover img:nth-child(2){
+
+.w-pro-private:hover img:nth-child(2) {
     display: none
 }
-.w-pro-private:hover img:nth-child(3){
+
+.w-pro-private:hover img:nth-child(3) {
     display: block
 }
 
@@ -204,9 +210,11 @@
     top: -77px;
     display: none;
 }
-.recharge-warp .recharge-warp-center .wealth-right-warp.w-user-warp{
+
+.recharge-warp .recharge-warp-center .wealth-right-warp.w-user-warp {
     background: none;
 }
+
 .w-user-banner {
     display: block;
     width: 100%;
@@ -316,13 +324,15 @@
 .w-user-list li:nth-child(1) a:hover, .w-user-list li:nth-child(2) a:hover {
     background: linear-gradient(#3b8fef, #4eb3f1)
 }
-.w-user-list li:nth-child(3) a.w-user-list-btn{
+
+.w-user-list li:nth-child(3) a.w-user-list-btn {
     position: relative;
     z-index: 10;
     bottom: 0;
     top: 45px;
-    background:none;
+    background: none;
 }
+
 .w-user-list li:nth-child(3) a.w-user-list-btn img {
     width: 110px;
     height: 36px;
@@ -332,13 +342,16 @@
     z-index: -1;
     display: none;
 }
-.w-user-list li:nth-child(3) a.w-user-list-btn img:first-child{
+
+.w-user-list li:nth-child(3) a.w-user-list-btn img:first-child {
     display: block;
 }
-.w-user-list li:nth-child(3) a.w-user-list-btn:hover img:first-child{
+
+.w-user-list li:nth-child(3) a.w-user-list-btn:hover img:first-child {
     display: none;
 }
-.w-user-list li:nth-child(3) a.w-user-list-btn:hover img:nth-child(2){
+
+.w-user-list li:nth-child(3) a.w-user-list-btn:hover img:nth-child(2) {
     display: block;
 }
 
@@ -511,6 +524,7 @@
     background: #fff;
     border-radius: 4px
 }
+
 .w-free-recom-title {
     font-size: 14px;
     line-height: 14px;
@@ -518,12 +532,14 @@
     border-bottom: 1px solid #eeeeee;
     padding-bottom: 10px;
 }
-.sdsd{
+
+.sdsd {
     width: 100%;
     height: 346px;
     background: #fff;
     border-radius: 20px;
 }
+
 .w-free-recom-title span {
     background: #008af7;
     width: 3px;
@@ -706,7 +722,8 @@
     position: relative;
     z-index: 10;
 }
-.w-pro-message-fr img{
+
+.w-pro-message-fr img {
     width: 136px;
     height: 48px;
     display: none;
@@ -715,12 +732,15 @@
     left: 0;
     z-index: -1;
 }
-.w-pro-message-fr img:nth-child(1){
+
+.w-pro-message-fr img:nth-child(1) {
     display: block;
 }
+
 .w-pro-message-fr:hover img:nth-child(1) {
     display: none;
 }
+
 .w-pro-message-fr:hover img:nth-child(2) {
     display: block;
 }
@@ -776,6 +796,10 @@
     line-height: 16px;
 }
 
+.w-pro-purchase-nav:hover {
+    color: #c58a12;
+    border-bottom: 2px solid #c58a12
+}
 .w-pro-purchase-nav.w-block {
     color: #c58a12;
     border-bottom: 2px solid #c58a12
@@ -827,12 +851,14 @@
     border-left: 3px solid #c58a12;
     margin-top: 30px;
 }
-.w-pro-tequan-title b{
+
+.w-pro-tequan-title b {
     font-weight: normal;
     color: #ccc;
     font-size: 14px;
     margin-left: 10px;
 }
+
 .w-pro-tequan-box {
     display: block;
     height: 180px;
@@ -1227,9 +1253,6 @@
     cursor: pointer;
 }
 
-.w-private-list li p:nth-child(3):hover {
-    background-image: linear-gradient(180deg, #e7c998 0%, #dcb276 100%), linear-gradient( #cccccc, #cccccc);
-}
 
 .w-private-list li:nth-child(1) p:nth-child(3):hover, .w-private-list li:nth-child(2) p:nth-child(3):hover {
     background: #ccc;
@@ -1257,6 +1280,36 @@
     background-size: cover;
     margin: 0 auto;
     box-sizing: border-box;
+}
+.w-pro-banner-title {
+    text-align: center;
+    width: 725px;
+    margin: 0 auto 0;
+    padding-top: 58px;
+    text-align: center;
+    font-size: 62px;
+    font-weight: bold;
+    line-height: 64px;
+}
+.w-pro-banner-title span{
+    float: left;
+    color: #d3ae70;
+}
+.w-pro-banner-title span:nth-of-type(2){
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-image: linear-gradient(180deg, 
+    #e0bb79 0%, 
+    #dcb16d 50%, 
+    #d8a661 100%); 
+    display:block;
+    margin: 22px 20px 0
+}
+.w-pro-banner-title span:nth-of-type(3){
+    font-size: 56px;
+    color: #d3ae70;
+    font-weight: normal;
 }
 
 .w-pro-container {
@@ -1593,7 +1646,8 @@
     position: absolute;
     z-index: 10;
 }
-.w-pro-shuoming-qq img:nth-child(2),.w-pro-shuoming-qq img:nth-child(3){
+
+.w-pro-shuoming-qq img:nth-child(2), .w-pro-shuoming-qq img:nth-child(3) {
     width: 138px;
     height: 38px;
     position: absolute;
@@ -1603,13 +1657,16 @@
     margin: 0;
     z-index: -1;
 }
-.w-pro-shuominmg .w-pro-shuoming-qq img:nth-child(2){
+
+.w-pro-shuominmg .w-pro-shuoming-qq img:nth-child(2) {
     display: block !important;
 }
-.w-pro-shuoming-qq:hover img:nth-child(2){
+
+.w-pro-shuoming-qq:hover img:nth-child(2) {
     display: none !important;
 }
-.w-pro-shuoming-qq:hover img:nth-child(3){
+
+.w-pro-shuoming-qq:hover img:nth-child(3) {
     display: block !important;
 }
 
@@ -1678,7 +1735,8 @@
     position: relative;
     z-index: 10;
 }
-.w-pro-ul2 li button img{
+
+.w-pro-ul2 li button img {
     position: absolute;
     width: 156px;
     height: 42px;
@@ -1687,15 +1745,19 @@
     z-index: -1;
     display: none;
 }
-.w-pro-ul2 li button img:nth-child(1){
+
+.w-pro-ul2 li button img:nth-child(1) {
     display: block;
 }
-.w-pro-ul2 li button:hover img:nth-child(1){
+
+.w-pro-ul2 li button:hover img:nth-child(1) {
     display: none;
 }
-.w-pro-ul2 li button:hover img:nth-child(2){
+
+.w-pro-ul2 li button:hover img:nth-child(2) {
     display: block;
 }
+
 /* 
 .w-pro-pay{
     width: 100%;
@@ -1720,9 +1782,11 @@
 }
 
  */
- .w-pro-container .pay-warp .pay-warp-center .small-pay-warp .pay-list .model-id .id, .pay-warp .pay-warp-center .small-pay-warp .pay-list .model-id .pay-name, .pay-warp .pay-warp-center .small-pay-warp .pay-list .pay-money .id, .w-pro-container .pay-warp .pay-warp-center .small-pay-warp .pay-list .pay-money .pay-name,.pay-warp .pay-warp-center .small-pay-warp .pay-list .version-type .version-type-txt{
-     float: left;
- }
+
+.w-pro-container .pay-warp .pay-warp-center .small-pay-warp .pay-list .model-id .id, .pay-warp .pay-warp-center .small-pay-warp .pay-list .model-id .pay-name, .pay-warp .pay-warp-center .small-pay-warp .pay-list .pay-money .id, .w-pro-container .pay-warp .pay-warp-center .small-pay-warp .pay-list .pay-money .pay-name, .pay-warp .pay-warp-center .small-pay-warp .pay-list .version-type .version-type-txt {
+    float: left;
+}
+
 .w-pro-pay .pay-warp-center .small-pay-warp {
     width: 595px;
 }
@@ -1832,36 +1896,120 @@
     background: #fff;
 }
 
-.download-sc .model_price {
-    width: 147px;
+.w-download-tle {
+    line-height: 23px;
+    font-size: 16px;
+    text-align: center;
+    color: #666;
+    padding-top: 20px;
+    box-sizing: content-box;
+    margin-left: -30px;
 }
-.download-sc .download a{
-    padding-left: 0;
-    font-size: 14px;
-}
-.download-sc .download {
-    width: 190px;
+
+.w-download-tle b {
+    font-size: 26px;
+    color: #e63123;
 }
 
 .download-sc {
-    height: 148px;
+    height: 203px;
+    padding-left: 30px;
     line-height: 0;
 }
 
 .download-sc .shoucang {
     height: 20px;
     line-height: 20px;
-    float: right;
-    margin-right: 30px;
+    float: left;
+    margin-left: 55px;
     margin-top: 20px;
 }
 
 .w-download-title {
     font-size: 12px;
     line-height: 12px;
+    height: 12px;
     color: #999999;
     text-align: center;
-    padding: 20px 0 10px;
+    padding: 10px 0 20px;
+    margin-left: -30px;
+    box-sizing: content-box;
+}
+
+.w-web-download {
+    display: block;
+    width: 132px;
+    height: 56px;
+    background-image: linear-gradient( #268aef, #268aef), linear-gradient( #00ff00, #00ff00);
+    background-blend-mode: normal, normal;
+    border-radius: 4px;
+    line-height: 56px;
+    position: relative;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    padding-left: 25px;
+}
+
+.w-web-download::before {
+    position: absolute;
+    top: 19px;
+    left: 23px;
+    content: "";
+    width: 16px;
+    height: 18px;
+    background: url(http://cache.xiadele.com/assets/frontend/details/xz-6c3363c504af2a55bdebcc46d8d3c3d01d5ee2b122fa63abb3c6baff1461c5f5.png) no-repeat center;
+    background-size: cover;
+}
+
+.w-web-download:hover {
+    background-image: linear-gradient(0deg, #4fb5f1 0%, #398def 100%), linear-gradient( #00ff00, #00ff00);
+}
+
+.w-kjk-download {
+    display: block;
+    width: 194px;
+    height: 56px;
+    background-image: linear-gradient( #268aef, #268aef), linear-gradient( #00ff00, #00ff00);
+    background-blend-mode: normal, normal;
+    border-radius: 4px;
+    margin-left: 15px;
+    position: relative;
+}
+
+.w-kjk-download:hover {
+    background-image:linear-gradient(90deg, #0095f7 0%, #00cff4 100%)
+}
+
+.w-kjk-download::before {
+    position: absolute;
+    top: 14px;
+    left: 40px;
+    content: "";
+    width: 18px;
+    height: 30px;
+    background: url('img/w-download-shandian.png') no-repeat center;
+    background-size: cover;
+}
+
+.w-kjk-download span:first-child {
+    display: inline-block;
+    width: 100%;
+    line-height: 16px;
+    font-size: 16px;
+    color: #fff;
+    padding-left: 66px;
+    padding-top: 11px;
+}
+
+.w-kjk-download span:last-child {
+    display: inline-block;
+    width: 100%;
+    line-height: 12px;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.68);
+    margin-top: 5px;
+    padding-left: 66px;
 }
 
 .w-download-icon {
@@ -1876,6 +2024,7 @@
     color: #999999;
     line-height: 20px;
     margin-top: 20px;
+    margin-right: 32px;
 }
 
 .w-download-icon:hover, .w-download-youhuiquan:hover, .shoucang:hover {
@@ -1889,7 +2038,6 @@
     line-height: 20px;
     margin-top: 20px;
     width: 115px;
-    margin-left: 32px;
     font-size: 14px;
     color: #999999;
     background: url(img/download1.png) no-repeat;
