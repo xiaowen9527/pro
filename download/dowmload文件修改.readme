@@ -1,0 +1,173 @@
+
+
+//修改空间酷下载弹窗
+.kjk-download-container 修改  padding：0；
+.kjk-download-title 修改  padding：20px 30px;
+
+添加
+.kjk-download-btn:hover{
+	background-image: linear-gradient(0deg, #4fb5f1 0%, #398def 100%), linear-gradient( #00ff00, #00ff00);
+}
+
+
+
+
+
+
+
+
+//修改网页下载已购
+download.html里面搜索“w-web-download”,在此a标签同级处添加
+<!-- 默认隐藏，添加类名w-block显示，表示已经购买此商品 -->
+<img class="w-block" src="img/w-buyed.png" style="display:block;width:40px;height:40px;position:absolute;top:66px;left:122px;cursor:pointer;border-radius:4px;" />
+
+
+
+
+
+//修改鼠标滚轮之后网页头部固定bug
+.header-active   修改   height:auto
+
+
+
+download.html里面搜索“person-icon-list”,把"fr"改成"fl"
+
+
+download.html里面搜索“medel-name-title”,把下面代码加入到这个div里面
+<section class="medel-name-conent both">
+    <span class="medel-name-conent-price fl">下载需: <b>3.8</b>元</span>
+    <a href="" class="medel-name-conent-down fl">立即下载</a>
+    <!-- 添加类名 shoucang-active 表示已收藏 -->
+    <p class="medel-name-conent-shoucang shoucang-active fr">收藏</p>
+</section>
+
+
+.header-active .detail_top .download-sc    修改   display: none !important;
+
+
+/* 修改 */
+.medel-name-title {
+    line-height: inherit;
+}
+/* 修改 */
+.medel-name-title .title {
+    line-height: 24px;
+    padding-top: 20px;
+}
+/* 修改 */
+.medel-name-title .copy_title {
+    top: 10px;
+}
+/* 修改 */
+.header-active .detail_top .medel-name-title {
+    width: 600px;
+    position: relative;
+}
+/* 新增 */
+.medel-name-title .person-icon-list .eye span, .medel-name-title .person-icon-list .xing span, .medel-name-title .person-icon-list .download-count span {
+    top: 5px;
+}
+/* 新增 */
+.medel-name-conent {
+    position: absolute;
+    left: 600px;
+    top: 0;
+    width: 680px;
+    height: 100%;
+}
+/* 新增 */
+.medel-name-conent-shoucang {
+    width: 60px;
+    height: 20px;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 30px;
+    color: #999;
+    text-align: right;
+    margin-right: 22px;
+    position: relative;
+}
+/* 新增 */
+.medel-name-conent-shoucang::before {
+    position: absolute;
+    top: -3px;
+    left: 0;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: url(http://cache.xiadele.com/assets/frontend/new/x-30a0dc6d5b0abef5f14f34855cec6a0f1f9860b47ceb401a3aeb3988a4002b57.png) no-repeat center;
+    background-size: cover;
+}
+/* 新增 */
+.medel-name-conent-shoucang.shoucang-active::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: url(http://p5mt8ior3.bkt.clouddn.com/assets/frontend/new/x2-f44d21561db8dfb50d8b501c05cfc72ca9b4d60995f4804de46e93fd37bd7475.png) no-repeat center !important;
+    background-size: cover !important;
+}
+/* 新增 */
+.medel-name-conent-price {
+    width: 142px;
+    height: 46px;
+    border-radius: 3px 0 0 3px;
+    border: solid 1px rgba(217, 217, 217, 0.8);
+    color: #999999;
+    font-size: 14px;
+    line-height: 46px;
+    text-align: center;
+    margin-top: 18px;
+    border-right: none;
+    margin-left: 280px;
+}
+/* 新增 */
+.medel-name-conent-price b{
+    font-size: 24px;
+    color: #e61b00;
+}
+/* 新增 */
+.medel-name-conent-down {
+    width: 96px;
+    height: 46px;
+    background-color: #268aef;
+    margin-top: 18px;
+    color: white;
+    font-size: 14px;
+    line-height: 46px;
+    border-radius: 0 3px 3px 0;
+    padding-left: 60px;
+    box-sizing: content-box;
+    position: relative;
+}
+/* 新增 */
+.medel-name-conent-down::before {
+    position: absolute;
+    top: 13px;
+    left: 33px;
+    content: "";
+    width: 18px;
+    height: 18px;
+    background: url(http://cache.xiadele.com/assets/frontend/details/xz-6c3363c504af2a55bdebcc46d8d3c3d01d5ee2b122fa63abb3c6baff1461c5f5.png) no-repeat center;
+    background-size: cover;
+}
+/* 新增 */
+.medel-name-conent-down:hover {
+    background-image: linear-gradient(0deg, #4fb5f1 0%, #398def 100%)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
